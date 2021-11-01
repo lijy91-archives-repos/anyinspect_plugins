@@ -11,17 +11,21 @@ class AnyInspectPluginNetwork extends AnyInspectPlugin {
 
   AnyInspectPluginNetwork() {
     AnyInspectHttpInterceptor interceptor = AnyInspectHttpInterceptor(
-      onRequest: (RequestInfo requestInfo) {
-        try {
-          send('request', requestInfo.toJson());
-        } catch (error) {}
-      },
-      onResponse: (ResponseInfo responseInfo) {
-        try {
-          send('response', responseInfo.toJson());
-        } catch (error) {}
-      },
+      onRequest: _onRequest,
+      onResponse: _onResponse,
     );
     HttpOverrides.global = AnyInspectHttpOverrides(interceptor);
+  }
+
+  void _onRequest(RequestInfo requestInfo) {
+    try {
+      send('request', requestInfo.toJson());
+    } catch (error) {}
+  }
+
+  void _onResponse(ResponseInfo responseInfo) {
+    try {
+      send('response', responseInfo.toJson());
+    } catch (error) {}
   }
 }
