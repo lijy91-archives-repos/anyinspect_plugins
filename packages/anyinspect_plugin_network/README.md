@@ -11,7 +11,7 @@
 
 ```yaml
 dependencies:
-  anyinspect_plugin_network: ^0.0.1
+  anyinspect_plugin_network: ^0.0.2
 ```
 
 ## Usage

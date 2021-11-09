@@ -19,13 +19,13 @@ class AnyInspectPluginNetwork extends AnyInspectPlugin {
 
   void _onRequest(RequestInfo requestInfo) {
     try {
-      send('request', requestInfo.toJson());
+      emitEvent('request', requestInfo.toJson());
     } catch (error) {}
   }
 
   void _onResponse(ResponseInfo responseInfo) {
     try {
-      send('response', responseInfo.toJson());
+      emitEvent('response', responseInfo.toJson());
     } catch (error) {}
   }
 }

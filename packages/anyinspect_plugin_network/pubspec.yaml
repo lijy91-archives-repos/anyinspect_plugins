@@ -1,16 +1,17 @@
 name: anyinspect_plugin_network
 description: AnyInspect Network Plugin
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/anyinspect/plugins
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
-  anyinspect_client: ^0.0.1
+  anyinspect_client: ^0.0.2
+  uuid: ^3.0.5
 
-dependency_overrides:
-  anyinspect_client:
-    path: ../../../anyinspect/packages/anyinspect_client
-  anyinspect_ui:
-    path: ../../../anyinspect/packages/anyinspect_ui
+# dependency_overrides:
+#   anyinspect_client:
+#     path: ../../../anyinspect/packages/anyinspect_client
+#   anyinspect_ui:
+#     path: ../../../anyinspect/packages/anyinspect_ui
