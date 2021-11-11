@@ -1,13 +1,13 @@
 name: anyinspect_plugin_shared_preferences
 description: AnyInspect SharedPreferences Plugin
-version: 0.0.2
+version: 0.1.0
 homepage: https://github.com/anyinspect/plugins
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
-  anyinspect_client: ^0.0.2
+  anyinspect_client: ^0.1.0
   shared_preferences: ^2.0.8
 
 # dependency_overrides:
