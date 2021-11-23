@@ -5,7 +5,7 @@
 [pub-image]: https://img.shields.io/pub/v/anyinspect_plugin_shared_preferences.svg
 [pub-url]: https://pub.dev/packages/anyinspect_plugin_shared_preferences
 
-[![Discord](https://img.shields.io/badge/discord-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/uJcUXQrs)
+[![Discord](https://img.shields.io/badge/discord-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/RzFrAhmXFY)
 
 ---
 
