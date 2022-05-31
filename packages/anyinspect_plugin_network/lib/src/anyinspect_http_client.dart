@@ -138,6 +138,15 @@ class AnyInspectHttpClient implements HttpClient {
   void close({bool force: false}) {
     client.close(force: force);
   }
+  
+  void set connectionFactory(
+          Future<ConnectionTask<Socket>> Function(
+                  Uri url, String? proxyHost, int? proxyPort)?
+              f) =>
+      throw UnsupportedError("connectionFactory not implemented");
+
+  void set keyLog(Function(String line)? callback) =>
+     throw UnsupportedError("keyLog not implemented");
 
   Future<AnyInspectHttpClientRequest> withInterceptor(
       Future<HttpClientRequest> future) async {
